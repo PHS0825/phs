@@ -1,12 +1,28 @@
+server:
+  port: 8080
+
 spring:
   application:
-    name: perftesttest
+    name: kakaopaytest
   datasource:
     url: jdbc:mysql://localhost:3306/KKODB?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-    username: root
-    password: 1234
+    username: KKOAPP
+    password: kkoapp01
+  output:
+    ansi:
+      enabled: always
   jpa:
     database: mysql
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
 
-server:
-  port: 14404
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace

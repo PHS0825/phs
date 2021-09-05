@@ -13,6 +13,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+//@DynamicUpdate
 @Getter // getter 메소드 생성
 @Builder // 빌더를 사용할 수 있게 함
 @AllArgsConstructor
